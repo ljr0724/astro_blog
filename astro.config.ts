@@ -14,7 +14,7 @@ import { SITE } from "./src/config";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ljr0724.github.io',  // 改成 GitHub Pages 地址
-  base: '/astro_blog/',               // 添加这一行，你的仓库名
+  base: '/',               // 添加这一行，你的仓库名
   trailingSlash: 'always',            // 添加这一行
   integrations: [
     sitemap({
