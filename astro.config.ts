@@ -36,6 +36,7 @@ export default defineConfig({
     },
   },
   vite: {
+    // @ts-ignore
     plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],

@@ -7,6 +7,7 @@ export const SITE = {
   profile: "https://github.com/ljr0724",
   lang: "zh-cn",
   dir: "ltr",
+  timezone: "Asia/Shanghai",
   lightAndDarkMode: true,
   postPerPage: 8,
   showArchives: true,
