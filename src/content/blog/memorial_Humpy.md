@@ -3,6 +3,7 @@ title: "Humpy"
 pubDatetime: 2026-04-13
 tags: ["幻贺箍牙"]
 ---
+<div id="protected-content" style="display:none;">
 张雪峰走了，走的猝不及防，如幻梦一场。高中时总爱看他切片，权当为我营造焦虑，也算努力了吧。昨日明日，往昔此时的界限，不知何时被揉得粉碎，杂乱地散成一界。
 
 站在界上眺望彼方，光影与迷雾让我失了方向；投入昨日温暖时，对岸又在消弭。我被困住了，困在了进退不得的今日，在记忆与未来中一遍遍被撕烂又重组，但再次拼起来，还是我吗？
@@ -16,3 +17,17 @@ tags: ["幻贺箍牙"]
 自初三起，就犹爱《琵琶行》中“今年欢笑复明年，秋月春风等闲度”与“夜深忽梦少年事，梦啼妆泪红阑干”二句，或许与我的敏感与感性有关吧。初三听只为乐天与琵琶女的境遇而动容落泪，朝花夕拾，已成曲中人。
 
 庞加莱曾提出：在一个有限的、能量固定的孤立系统中，系统在经历足够长的时间后，总会无限接近于它的初始状态，换句话说，宇宙中的粒子在足够长的时间后，会重新排成曾经的模样，恐龙诞生与灭绝，第一只猿猴下树，乃至王朝的更迭…虽然这一定理已被证明在宇宙热寂前不可能实现，但热寂与湮灭后，星云与废墟的角落，会不会生成一个小宇宙呢？数十万亿年后，又一次在月考表彰中，在种种挫败中，在深夜沉思中，红白校服依旧生辉，我们仍年轻，这难道不是宇宙间最浪漫的事吗？毕竟，这世上有什么比得过公元2025年6月10日的夕阳呢？
+</div>
+
+<script>
+  const userPassword = prompt("请输入密码：");
+  const correctPassword = "0610"; 
+  
+  if (userPassword === correctPassword) {
+    document.getElementById("protected-content").style.display = "block";
+  } else if (userPassword !== null) {
+    document.write("<p style='color:red; text-align:center; padding:2rem;'>密码错误，无法访问。</p>");
+  } else {
+    document.write("<p style='color:gray; text-align:center; padding:2rem;'>需要密码才能查看此文章。</p>");
+  }
+</script>
