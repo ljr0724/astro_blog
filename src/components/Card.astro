@@ -15,7 +15,7 @@ const { title, description, ...props } = data;
 
 <li class="my-6">
   <a
-    href={`/astro_blog${getPath(id, filePath)}`}
+    href={getPath(id, filePath)}
     class:list={[
       "inline-block text-lg font-medium text-accent",
       "decoration-dashed underline-offset-4 hover:underline",
