@@ -5,19 +5,19 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #ffffff;   /* 纯白背景 */
+  --foreground: #1a1a1a;   /* 深灰文字（纯黑太刺眼） */
+  --accent: #006cac;       /* 蓝色点缀 */
+  --muted: #f0f0f0;        /* 浅灰辅助色 */
+  --border: #e5e5e5;       /* 浅灰边框 */
 }
 
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+  --background: #000000;   /* 纯黑背景 */
+  --foreground: #ffffff;   /* 纯白文字 */
+  --accent: #ff6b01;       /* 橙色点缀 */
+  --muted: #1a1a1a;        /* 深灰辅助色 */
+  --border: #2a2a2a;       /* 深灰边框 */
 }
 
 @theme inline {
