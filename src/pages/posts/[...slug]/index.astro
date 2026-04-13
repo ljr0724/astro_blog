@@ -11,16 +11,15 @@ type Props = {
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
   const postResult = posts.map(post => {
-    // 获取文章的相对路径（不包含 /astro_blog/posts）
-    const relativePath = getPath(post.id, post.filePath, false);
-    // 完整路径：去掉开头的 /，然后作为参数
-    const slug = relativePath.replace(/^\//, '');
+    // 直接使用文章的 id 作为 slug
+    const slug = post.id;
     return {
       params: { slug },
       props: { post },
     };
   });
 
+  console.log('Generated paths:', postResult.map(p => p.params.slug));
   return postResult;
 }
 
